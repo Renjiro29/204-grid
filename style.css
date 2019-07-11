@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'batatinha batatinha batatinha batatinha'
+                         'navbar navbar navbar aside'  
+                         'section section section aside'
+                         'footer footer footer footer';
+   grid-template-rows: 30vh 20vh 60vh 40vh;     
+   grid-gap: 15px;
+   background-color: black;
+}
+
+header{
+    grid-area: batatinha;
+    background-color: rgb(19, 160, 160)
+}
+nav{
+    grid-area: navbar;
+    background-color: darkgoldenrod
+}
+section{
+    grid-area: section;
+    background-color: blue
+}
+aside{
+    grid-area: aside;
+    background-color: chartreuse
+}
+footer{
+    grid-area: footer;
+    background-color: green;
+}
