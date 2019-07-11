@@ -2,31 +2,95 @@ body{
     margin: 0;
     display: grid;
     grid-template-areas: 'batatinha batatinha batatinha batatinha'
-                         'navbar navbar navbar aside'  
+                         'navbar navbar navbar navbar'  
                          'section section section aside'
                          'footer footer footer footer';
    grid-template-rows: 30vh 20vh 60vh 40vh;     
    grid-gap: 15px;
-   background-color: black;
-}
-
+   background-color: black;}
 header{
     grid-area: batatinha;
-    background-color: rgb(19, 160, 160)
+    background-color: rgb(19, 160, 160);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 nav{
     grid-area: navbar;
-    background-color: darkgoldenrod
+    background-color: darkgoldenrod;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14pt;
 }
+nav a{
+    color: white;
+}
+
 section{
     grid-area: section;
-    background-color: blue
+    background-color: blue;
+    font-size: 14pt;
 }
+
 aside{
     grid-area: aside;
-    background-color: chartreuse
+    background-color: maroon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside h3{
+    color: yellow;
+    font-size: 20pt;
+}
+
+
+aside button{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: aqua;
+    color: green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+aside input{
+    border: none;
+    height: 30px;
+    width: 250px;
+    border-bottom: 1px rgb(5, 116, 5) solid;
+    background-color: transparent;
+    color: limegreen;
+    font-size: 14pt;
+}
+
+aside input::placeholder{
+    font-size: 14pt;
+    color: aqua;
+}
+
+aside input:nth-child(3){
+    margin-top: 10px;
 }
 footer{
     grid-area: footer;
     background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+footer div{
+    width: 150px;
+    height: 40px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
